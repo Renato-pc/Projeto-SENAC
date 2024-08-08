@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercícios Javascript</title>
 </head>
+
 <body>
-    <title>Teste</title>
+    <!-- <h1>Cálculo de média</h1> -->
+    <script>
+
+        // Exercício média
+        let p1 = 8.5
+        let p2 = 7.0
+        let p3 = 6.2
+        let p4 = 5.3
+        const media = (p1 + p2 + p3 + p4) / 4
+        console.log("Média = ", media, media >= 7)
+
+        // Cálculo estoque médio
+
+        const id_peca = 22
+        let estoque_min = 15
+        let estoque_max = 50
+        const media_estoque = (estoque_min + estoque_max) / 2
+        console.log("Estoque Médio =", media_estoque)
+
+        // Exercício Salário
+
+        let salario1 = 100
+        let salario2 = 200
+        let salario3 = 300
+        let ir1 = 0
+        let ir2 = 10
+        let ir3 = 15
+        const salliq1 = salario1 - ir1
+        const salliq2 = salario2 - ir2
+        const salliq3 = salario3 - ir3
+        console.log("salliq1>=100", salliq1 >= 100)
+        console.log("salliq2<190", salliq2 < 190)
+        console.log("salliq3 == (salario3-ir3)", salliq3 == (salario3 - ir3))
+
+        // Exercício 4 
+
+        var a = 3
+        var b = 7
+        var c = 4
+        console.log((a + c) > b)
+        console.log(b >= (a + 2))
+        console.log(c == (b - a))
+        console.log(b + a <= c)
+        console.log((c + a) > b)
+
+        // Exercício 5
+        
+        var a = 5
+        var b = 4
+        var c = 3
+        var d = 6
+        console.log((a>c)&&(c<=d))
+        console.log((a+b>10)||(a+b)==(c+d))
+        console.log((a>=c)&&(d>=c))
+        </script>
+
 </body>
+
 </html>

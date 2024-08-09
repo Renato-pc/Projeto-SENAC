@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,20 +12,34 @@
     <script>
 
         // Exercício média
+
         let p1 = 8.5
         let p2 = 7.0
         let p3 = 6.2
-        let p4 = 5.3
+        let p4 = 7.3
         const media = (p1 + p2 + p3 + p4) / 4
-        console.log("Média = ", media, media >= 7)
+        if (media >= 7) {
+            situacao = "Aprovado";
+        } else {
+            situacao = "Reprovado";
+        }
+        console.log("Sua média é ", media, ", e você foi", situacao)
 
         // Cálculo estoque médio
 
         const id_peca = 22
         let estoque_min = 15
         let estoque_max = 50
+        let estoque_qnt = 23
         const media_estoque = (estoque_min + estoque_max) / 2
-        console.log("Estoque Médio =", media_estoque)
+        if (estoque_qnt <= estoque_min) {
+            alerta = "Atenção! Realizar compra de material";
+        } else if (estoque_qnt >= estoque_max) {
+            alerta = "Estoque acima do limite";
+        } else {
+            alerta = "Estoque normal"
+        }
+        console.log("Peça com id",id_peca, alerta)
 
         // Exercício Salário
 
@@ -54,15 +68,16 @@
         console.log((c + a) > b)
 
         // Exercício 5
-        
+
         var a = 5
         var b = 4
         var c = 3
         var d = 6
-        console.log((a>c)&&(c<=d))
-        console.log((a+b>10)||(a+b)==(c+d))
-        console.log((a>=c)&&(d>=c))
-        </script>
+        console.log((a > c) && (c <= d))
+        console.log((a + b > 10) || (a + b) == (c + d))
+        console.log((a >= c) && (d >= c))
+
+    </script>
 
 </body>
 

@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/script.js">
     <title>Exercícios Javascript</title>
 </head>
 
 <body>
     <!-- <h1>Cálculo de média</h1> -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="teste">
+                    <button>
+                        <a href="http://google.com">Teste</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
 
         // Exercício média
@@ -39,7 +52,7 @@
         } else {
             alerta = "Estoque normal"
         }
-        console.log("Peça com id",id_peca, alerta)
+        console.log("Peça com id", id_peca, alerta)
 
         // Exercício Salário
 
@@ -76,6 +89,132 @@
         console.log((a > c) && (c <= d))
         console.log((a + b > 10) || (a + b) == (c + d))
         console.log((a >= c) && (d >= c))
+
+
+        // Exercícios PDF
+        // Exercício 14
+
+        let a_ex14 = 15
+        if (a_ex14 > 10) {
+            alert14 = "É maior que 10!";
+        } else {
+            alert14 = "Não é maior que 10!";
+        }
+        console.log(alert14)
+
+        // Exercício 15
+
+        let a_ex15 = -2
+        if (a_ex15 >= 0) {
+            alert15 = "Positivo";
+        } else {
+            alert15 = "Negativo";
+        }
+        console.log(alert15)
+
+        // Exercício 16
+
+        let maça_qnt = 20
+        let maça_varejo = 1.30
+        let maça_atacado = 1.00
+        const calc_varejo = (maça_qnt * maça_varejo)
+        const calc_atacado = (maça_qnt * maça_atacado)
+        if (maça_qnt < 12) {
+            (console.log("Total de maças compradas é de " + maça_qnt + ", e o valor total da compra é de R$" + calc_varejo + " reais"));
+        } else {
+            (console.log("Total de maças compradas é de " + maça_qnt + ", e o valor total da compra é de R$" + calc_atacado + " reais"));
+        }
+
+        // Exercício 17
+
+        let nota1 = 7.3
+        let nota2 = 5.0
+        const calc_media = (nota1 + nota2) / 2
+        if (calc_media >= 6) {
+            alert17 = "Aprovado";
+        } else {
+            alert17 = "Reprovado";
+        }
+        console.log("Média final =", calc_media, ".", "Você foi", alert17)
+
+        // Exercício 18
+
+        let ano_nascimento = 2012
+        let ano_atual = 2024
+        const idade_ano = ano_atual - ano_nascimento
+        if (idade_ano >= 16) {
+            alert18 = "Pode votar!"
+        } else {
+            alert18 = "Não pode votar!"
+        }
+        console.log("Idade:", idade_ano, alert18)
+
+        // Exercício 19
+
+        let valor1_19 = 20
+        let valor2_19 = 12
+        if (valor1_19 > valor2_19) {
+            console.log("O valor maior é o primeiro, que é", valor1_19)
+        } else {
+            console.log("O valor maior é o segundo, que é", valor2_19)
+        }
+
+        // Exercício 20
+
+        let valor1_20 = 20
+        let valor2_20 = 22
+        if (valor1_20 > valor2_20) {
+            console.log(valor2_20 + " , " + valor1_20)
+        } else {
+            console.log(valor1_20 + " , " + valor2_20)
+        }
+
+        // Exercício 21
+
+        let hora_inicio = 23
+        let hora_fim = 1
+        if (hora_inicio < hora_fim) {
+            console.log("Duração de " + (hora_fim - hora_inicio) + "h")
+        } else {
+            console.log("Duração de " + (hora_fim + 24 - hora_inicio) + "h")
+        }
+
+        // Exercício 22
+
+        let salario_base = 2000
+        let horas_mes = 165
+        const valor_por_hora = salario_base / 160
+        if (horas_mes == 160) {
+            console.log("O salário do mês é de R$" + salario_base)
+        } else {
+            console.log("O salário do mês é de R$" + salario_base + " fixo e teve um adicional de R$" + ((horas_mes - 160) * valor_por_hora * 1.5) + " por " + (horas_mes - 160) + " horas extras")
+        }
+
+        // Exercício 23
+
+        let nome = "João"
+        let sexo = "M"
+        let altura = 1.8
+        if (sexo = "M") {
+            peso_ideal = (72.7 * altura) - 58
+        } else {
+            peso_ideal = (72.7 * altura) - 44.7
+        }
+        console.log(peso_ideal)
+
+        // Exercício 24
+
+        let salario_fixo = 1500
+        let valor_vendas = 1400
+        if (valor_vendas <= 1500) {
+            console.log(salario_fixo + valor_vendas * 0.03)
+        } else {
+            console.log(salario_fixo + valor_vendas * 0.05)
+        }
+
+        // Exercício 25
+
+        
 
     </script>
 

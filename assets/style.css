@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-one: #2B79C3;
+    --primary-color-two: #C8DFF0;
+    --primary-color-three: #E4E4E4;
+    --primary-color-four: #3B4651;
+
+}
+
+body .teste  a {
+    display: block;
+    background-color: var(--primary-color-two);
+    font-size: 30px;
+    color: var(--primary-color-one);
+    width: 300px;
+    height: 50px;
+}
+
+body .teste a:hover {
+    background-color: green;
+    transition-duration: 1s;
+}
